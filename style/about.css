@@ -491,4 +491,7 @@ img:hover {
 	transform: scaleX(-1);
   }
 
-
+.skills{
+  display: inline-block;
+  
+}
