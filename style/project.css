@@ -274,76 +274,65 @@ h1{
     font-size: 8vh;
   }
 }
+/*End of Nav*/
 
+/* linear-gradient(to right, #feac5e, #c779d0, #4bc0c8); */
+/* Container needed to position the button. Adjust the width as needed */
 .container {
-  position: absolute;
-  height: 300px;
-  width: 600px;
-  top: 60px;
-  left: calc(50% - 300px);
-  display: flex;
-}
-
-.card {
-  display: flex;
-  height: 280px;
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000; 
-  transition: 0.4s ease-out;
   position: relative;
-  left: 10px;
-  margin-top: 300px;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  
 }
 
-.card:not(:first-child) {
-    margin-left: -50px;
+/* Make the image responsive */
+.container img {
+  width: 175px;
+  height: 175px;
+  display: inline;
+  top: 50%;
+  left: 50%;
 }
 
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-}
-
-.card:hover ~ .card {
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
   position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #feac5e;
+  color:black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
 }
 
-.title {
-  color: white;
-  font-weight: 300;
-  position: absolute;
-  left: 20px;
-  top: 15px;
+.container .btn:hover {
+  background-color: rgb(194, 2, 252);
 }
 
-
-.card:hover .filledbar {
-  width: 120px;
-  transition: 0.4s ease-out;
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+ 
+  
 }
 
-.circle {
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 60px);
-}
+.button:hover {background-color: #3e8e41}
 
-.stroke {
-  stroke: gold;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: hotpink;
-  stroke-width: 2px;
-}
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
